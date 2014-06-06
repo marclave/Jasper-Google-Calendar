@@ -17,9 +17,9 @@ FLAGS = gflags.FLAGS
 
 WORDS = [ "Calendar", "Events", "Check", "My" ]
 
-client_id = '836505897262-skgdl83qigcinpjomaj2ebs7eao16pa8.apps.googleusercontent.com'
+client_id = 'xxxxxxxx.apps.googleusercontent.com'
 
-client_secret = 'G1HJCiRQcpLsgl_ZUTf_ITWw'
+client_secret = 'xxxxxxxxxxxxxx'
 
 monthDict = {'January': '01', 
 		'February': '02', 
