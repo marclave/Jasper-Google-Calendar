@@ -13,6 +13,9 @@ from oauth2client.client import OAuth2WebServerFlow
 from oauth2client.tools import run
 from oauth2client.tools import *
 
+
+# Written by Marc Poul Joseph Laventure
+
 FLAGS = gflags.FLAGS
 
 WORDS = [ "Calendar", "Events", "Check", "My" ]
