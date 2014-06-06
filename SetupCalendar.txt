@@ -1,0 +1,60 @@
+Steps to install Calendar
+
+In your Home Directory:
+
+1. sudo pip install httplib2
+
+2. sudo pip install --upgrade google-api-python-client
+
+3. sudo easy_install --upgrade python-gflags
+
+4. run: 
+	
+	git clone https://github.com/marclave/Software-Projects.git
+
+5. run:
+
+	cp Software-Projects/JasperCalendar/Calendar.py <path to ..client/jasper/modules>
+
+5. Go to https://console.developers.google.com/project and login:
+	Select a project.
+	In the sidebar on the left, select APIs & auth. In the list of APIs, make sure the status is ON for the Google Calendar API.
+
+	In the sidebar on the left, select Credentials.
+
+	Get Client ID and Client Secret (Save for later)
+
+6. Open Calendar.py and add Client ID and Client secret to appropriate variables (Will be updated later, for based on API version)
+
+7. cd ../jasper/client/
+
+8. run:
+
+	 python modules/Calendar.py --noauth_local_webserver
+
+9. go to website displayed from script
+
+10. allow access and enter verification code to script
+
+11. add to __init.py
+
+	from modules import Calendar
+
+12. Now you can run Use Google Calendar with Jasper
+
+Try the following commands!
+
+YOU: Add Calendar event
+JASPER: What would you like to add?
+YOU: Movie with erin Friday at 5 pm
+JASPER: Added event Movie with erin on June 06 at 5:00 pm
+JASPER: Is this what you wanted?
+YOU: Yes
+JASPER: Okay, I added it to your calendar
+
+YOU: Do I have any Calendar events tomorrow
+JASPER: Dinner with erin at 9:00 pm
+
+YOU: Do I have any Calendar Events Today
+JASPER: Dinner with erin at 6:00 pm
+
