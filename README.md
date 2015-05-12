@@ -19,6 +19,7 @@ git clone https://github.com/marclave/Jasper-Google-Calendar.git
 cp Software-Projects/JasperCalendar/Calendar.py <path to ..client/jasper/modules>
 ```
 * Login to [Google developer Console](https://console.developers.google.com/project) and complete the following
+* The Client ID in Google needs to be for a native application.
 ```
 Select a project.
 In the sidebar on the left, select APIs & auth. In the list of APIs, make sure the status is ON for the Google Calendar API.
@@ -27,6 +28,9 @@ Get Client ID and Client Secret (Save for later)
 ```
 * Open Calendar.py and add Client ID and Client secret to appropriate variables (Will be updated later, for based on API version)
 * Run the following commnads
+* NOTE: running; python modules/Calendar.py --noauth_local_webserver doesn't work. You need to kill Jasper, then restart it manually using ./jasper.py. Once that has restarted and authenticated, restart your Pi so that Jasper starts as it normally would.
+
+BELOW IS NO LONGER IN USE
 ```
 cd ../jasper/client/
 python modules/Calendar.py --noauth_local_webserver
