@@ -4,7 +4,7 @@ import datetime
 import re
 import gflags
 
-from app_utils import getTimezone
+from client.app_utils import getTimezone
 from dateutil import tz
 from apiclient.discovery import build
 from oauth2client.file import Storage
