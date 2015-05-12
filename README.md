@@ -30,11 +30,6 @@ Get Client ID and Client Secret (Save for later)
 * Run the following commnads
 * NOTE: running; python modules/Calendar.py --noauth_local_webserver doesn't work. You need to kill Jasper, then restart it manually using ./jasper.py. Once that has restarted and authenticated, restart your Pi so that Jasper starts as it normally would.
 
-BELOW IS NO LONGER IN USE
-```
-cd ../jasper/client/
-python modules/Calendar.py --noauth_local_webserver
-```
 * Go to website displayed from script 
 * Add the following to __init.py
 ```
