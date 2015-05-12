@@ -49,4 +49,7 @@ JASPER: Dinner with erin at 9:00 pm
 YOU: Do I have any Calendar Events Today
 JASPER: Dinner with erin at 6:00 pm
 ```
-
+##Contributions from the following awesome debuggers/developers :)
+```
+@dansinclair25
+```
