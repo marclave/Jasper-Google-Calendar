@@ -10,7 +10,6 @@ from apiclient.discovery import build
 from oauth2client.file import Storage
 from oauth2client.client import AccessTokenRefreshError
 from oauth2client.client import OAuth2WebServerFlow
-from oauth2client.tools import run
 from oauth2client.tools import *
 
 
@@ -217,14 +216,14 @@ credentials = storage.get()
 
 # If no credentials are found or the credentials are invalid due to
 # expiration, new credentials need to be obtained from the authorization
-# server. The oauth2client.tools.run() function attempts to open an
+# server. The oauth2client.tools.run_flow() function attempts to open an
 # authorization server page in your default web browser. The server
 # asks the user to grant your application access to the user's data.
-# If the user grants access, the run() function returns new credentials.
+# If the user grants access, the run_flow() function returns new credentials.
 # The new credentials are also stored in the supplied Storage object,
 # which updates the credentials.dat file.
 if credentials is None or credentials.invalid:
-	credentials = run(flow, storage)
+	credentials = run_flow(flow, storage)
 
 # Create an httplib2.Http object to handle our HTTP requests, and authorize it
 # using the credentials.authorize() function.
