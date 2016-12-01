@@ -30,7 +30,7 @@ Get Client ID and Client Secret (Save for later)
 
 * Kill Jasper the following will return all processes of jasper that are running:
 ```
-ps ax | grep jasper 
+ps ax | grep jasper
 ```
 * Then run(Where <pid> is the PID of each process from the previous command):
 ```
@@ -54,17 +54,18 @@ sudo reboot
 ```
 YOU: Add Calendar event
 JASPER: What would you like to add?
-YOU: Movie with erin Friday at 5 pm
-JASPER: Added event Movie with erin on June 06 at 5:00 pm
+YOU: Movie with jodie Friday at 5 pm
+JASPER: Added event Movie with jodie on June 06 at 5:00 pm
 JASPER: Is this what you wanted?
 YOU: Yes
 JASPER: Okay, I added it to your calendar
 YOU: Do I have any Calendar events tomorrow
-JASPER: Dinner with erin at 9:00 pm
+JASPER: Dinner with jodie at 9:00 pm
 YOU: Do I have any Calendar Events Today
-JASPER: Dinner with erin at 6:00 pm
+JASPER: Dinner with jodie at 6:00 pm
 ```
 ##Contributions from the following awesome debuggers/developers :)
 ```
 @dansinclair25
+@swcraig
 ```
